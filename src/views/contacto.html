@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="shortcut icon" href="/img/NachoLimpieza_Logo.png">
+</head>
+<body>
+    <%- include ('partials/header.html')%> 
+    <div class="box-principal">
+    <%- include ('partials/navigation.html')%> 
+    <main>
+        <div>
+          <img class="img-contacto" src="/img/foto-contacto.png" alt="foto-contacto">
+        </div>
+        <div class="box-main1">
+          <div class="formulario">
+            <div id="wufoo-z1fl8qvq086nhcn"> Fill out my 
+             <a href="https://nacho2806.wufoo.com/forms/z1fl8qvq086nhcn">online form</a>. 
+             </div> <script type="text/javascript"> var z1fl8qvq086nhcn; (function(d, t) { var s = d.createElement(t), options = { 'userName':'nacho2806', 'formHash':'z1fl8qvq086nhcn', 'autoResize':true, 'height':'673', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { z1fl8qvq086nhcn = new WufooForm(); z1fl8qvq086nhcn.initialize(options); z1fl8qvq086nhcn.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+          </div>
+        </div><br>  
+        <footer>Información de Contacto
+              <div style="background-color: rosybrown;">
+                <div style="text-align:left; font-family: cursive; color: black;">
+                <span style="font-size: large; position: relative; left: 10px;">Nuestras Redes</span>  
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank"></a> 
+                <picture><img class=image-inst src="/img/instagram.png" alt="Foto de instagram"></picture>
+                <a style="color: rosybrown;" href="https://www.facebook.com/Nacho-Limpieza/" target="_blank">
+                <picture><img class=image-face src="/img/facebook.png" alt="Foto de facebook"></picture>
+                </a> 
+                <a href="#" class=></a>
+                <picture><img class=image-gmail src="/img/gmail.png" alt="Foto de gmail"></picture>
+                <span style="position: relative; left: 100px; font-size: large;">Urquiza 1217 | (7000) Tandil - Buenos Aires | Cel/WhatsApp.: (0249) 15-4684628</span>
+                </div>
+             </div>
+        </footer>
+   </main>
+  </div>
+</body>
+</html>

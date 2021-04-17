@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title  %></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <%- include ('partials/head.html')%>
+
+</head>
+<body>    
+    <%- include ('partials/header.html')%>
+    <div class="box-principal">
+    <%- include ('partials/navigation.html')%>    
+    <main>
+        <div class="box" style="font-family: 'Dela Gothic One', cursive;">
+            <h1 class="title-1 animated bounceIn" style="font-family: 'Dela Gothic One', cursive; text-align: justify;">
+                BIENVENIDOS A NACHO</h1>
+            <h2 class="title-2 animated bounceIn" style="font-family: 'Dela Gothic One', cursive; text-align: justify;"
+               >LIMPIEZA</h2>
+            <p style="text-align: center">
+                Los invitamos a recorrer nuestro espacio virtual en el cual mostramos los objetivos, compromisos y los productos que tenemos para usted. Para nosotros es vital que cada día siga confiando y nos siga eligiendo.</p>
+        </div> 
+        <dialog id="modal" class="modal">
+            <div class="modal-contenido">
+                <h2 style="font-family: sans-serif">Envíanos un WhatsApp</h2>
+                <img src="/img/whatsapp.png" style="height: 1.1em;"> 2494684628</img> 
+                <br>
+                <button id="close">Cerrar</button>
+            </div>
+        </dialog>
+        <button id="button" class="boton-modal">Envía ahora tu pedido y/o consulta</button>
+    </main>
+    </div>
+    <script>
+        const button=document.getElementById('button')
+        const modal=document.getElementById('modal')
+        const close=document.getElementById('close')
+   
+        button.addEventListener('click', () => {
+            modal.setAttribute('open', 'true')
+        })
+   
+        close.addEventListener('click', () => {
+            modal.removeAttribute('open')
+        })
+   </script>
+</body>
+</html>

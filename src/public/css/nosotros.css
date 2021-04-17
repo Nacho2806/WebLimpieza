@@ -1,0 +1,139 @@
+:root{
+    --menu-color:#FBA905;
+    --first-color: #007BDF;
+    --first-color-alt:#006DC6;
+    --second-color: #00CBFF;
+    --second-color-alt:#00BFF0;
+    --third-color: #FF3C32;
+    --third-color-rgba: rgba(255, 60, 50, .5);
+    --third-color-alt:#FF2419;
+    --accent-color: #FBA905;
+    --accent-color-alt: #F1A000;
+    --dark-color: #282D31;
+    --dark-color-alt: #141618;
+    --border-color: #DFE0E0;
+    --text-color: #53575A;
+    --body-bg: #FAFDFF;
+    --font-main:sans-serif;
+    --font-size: 16px;
+    --line-height: 1.6;
+    --header-height: 8rem;
+    --max-width: 1200px;
+}
+  
+*, *::before, *::after{
+    box-sizing: border-box;
+    background-clip: border-box;
+}
+  
+body{
+    font-size: 1.5em;
+    background-image: url(/img/imagen_fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.box-title{
+    width: 80%;
+    height: 15%;
+    background-color: burlywood;
+    border: 1px solid black;
+    margin-left: 130px;
+    margin-top: 13px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+  
+.logo{
+    width: 200px;
+    height: 90px;
+    position: initial;
+}
+  
+.box-principal{
+    width: 80%;
+    background-color: burlywood;
+    border: 1px solid black;
+    margin-left: 130px;
+    margin-top: 13px;
+}
+  
+/*Encabezado y Menú principal*/
+.menu{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display:flex;
+    background-color: rgb(141, 93, 3);
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.menu-item:hover{
+    background: var(--menu-color);
+}
+
+.menu-item{
+    position: relative;
+    height: 100emS;
+}
+  
+.menu-item:hover > .submenu{
+    display: block;
+}
+
+.submenu{
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: .5em 1em;
+}
+
+.submenu .submenu{
+    top: 0;
+    left: 100%;
+}
+
+/*Efecto para las cajas principales*/
+p{
+margin-bottom: 1rem;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p:empty{
+margin-bottom: 0;
+display: none;
+}
+
+.main article{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color:var(--dark-color);
+    color:var(--accent-color);
+    transition: all .5s ease-out;
+}
+
+.main article:hover{
+    background-color:var(--accent-color);
+    color:var(--dark-color);
+}
+.main article:active{
+    background-color:var(--second-color);
+    color:var(--dark-color);
+
+}
+.main article:nth-of-type(){
+    background-color: var(--dark-color-alt);
+}
+
+.main h2{
+    color:var(--third-color);
+}
